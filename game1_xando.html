@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link rel="stylesheet" href=".\css\bootstrap.min.css" >
+		<script src=".\js\bootstrap.min.js" ></script>
+		<script src=".\js\custom.js" ></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1 class="display-1 text-center">X & O</h1>
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<table id="mainTable" class="table table-bordered text-center">
+						<tr>
+							<td id="box1" onclick="myFunction(this)" class="alert-secondary"></td>
+							<td id="box2" onclick="myFunction(this)" class="alert-secondary"></td>
+							<td id="box3" onclick="myFunction(this)" class="alert-secondary"></td>
+						</tr>					
+						<tr>
+							<td id="box4" onclick="myFunction(this)" class="alert-secondary"></td>
+							<td id="box5" onclick="myFunction(this)" class="alert-secondary"></td>
+							<td id="box6" onclick="myFunction(this)" class="alert-secondary"></td>
+						</tr>
+						<tr>
+							<td id="box7" onclick="myFunction(this)" class="alert-secondary"></td>
+							<td id="box8" onclick="myFunction(this)" class="alert-secondary"></td>
+							<td id="box9" onclick="myFunction(this)" class="alert-secondary"></td>
+						</tr>
+					</table>
+					<button type="button" onclick="fnResetGame()" id="resetButton" class="btn btn-secondary btn-lg btn-block disabled" disabled="true">Re-start</button>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3 offset-md-3">
+					<h1 class="display-4">Player X</h1>
+					<h1 class="display-1" id="player1points">0</h1>
+				</div>
+				<div class="col-md-3">
+					<h1 class="display-4">Player O</h1>
+					<h1 class="display-1" id="player2points">0</h1>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+	
